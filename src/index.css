@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+button:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #e84a5f; 
+}
+
+.main-container {
+   width: 90%;
+   max-width: 750px;
+   min-height: 350px;
+   background-color: #ff847c; 
+   border-radius: 5px 5px 0 0;
+}
+
+.list-container {
+    display: flex;
+    align-items: center;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    gap: 0.5em;
+    width: 100%;
+    text-align: center;
+}
+
+.clear-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    max-width: 750px;
+    min-height: 50px;
+    background-color: #ff847c; 
+    border-top: 2px solid white;
+    border-radius: 0 0 5px 5px;
+}
+
+.item-container {
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    margin-top: 1.5em;
+    padding-bottom: 0.5em;
+    border-bottom: 2px solid white;
+}
+
+.error-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding: 0.2em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 350px;
+    padding: 1.5em;
+    border-radius: 5px 5px 0 0;
+}
+
+input {
+    width: 95%;
+    max-width: 500px;
+    padding: 0.5em 0.5em 0.5em 1.5em;
+    border: none;
+    border-radius: 5px;
+}
+
+.shop-item {
+    list-style: none;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.shop-item-complete {
+    list-style: none;
+    text-transform: capitalize;
+    text-decoration: line-through;
+    font-weight: bold;
+}
+
+.quantity {
+    position: relative;
+    bottom: 2px;
+    font-weight: bold;
+    margin: 0 0.1em;
+}
+
+.list-empty {
+    margin-top: 3.5em;
+}
+
+.add-btn {
+    font-size: 1rem;
+    border: none;
+    background: transparent;
+}
+
+.clear-btn {
+    width: 150px;
+    border: none;
+    border-radius: 5px;
+    padding: 0.3em;
+    font-weight: bold;
+    background-color: #e84a5f; 
+}
+
+.quantity-btn {
+    color: #e84a5f; 
+    border: none;
+    background: transparent;
+    font-size: 1rem;
+}
+
+.complete-btn {
+    color: green;
+    border: none;
+    background: transparent;
+    font-size: 1rem;
+    margin-left: 0.2em;
+}
+
+@media screen and (max-width: 500px) {
+    .item-container {
+        width: 250px;
+    }
+}
